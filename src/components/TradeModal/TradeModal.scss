@@ -1,0 +1,44 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: opacity .2s;
+  opacity: 0;
+  z-index: 1000;
+  cursor: pointer;
+  visibility: hidden;
+
+  .modal-content {
+    position: relative;
+    min-width: 550px;
+    height: fit-content;
+    margin-top: 200px;
+    background: #fff;
+    padding: 20px;
+    z-index: 1001;
+    border-radius: 10px;
+    overflow: auto;
+    cursor: default;
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      height: 25px;
+      font-weight: 600;;
+    }
+  }
+}
+
+.show {
+    visibility: visible;
+    z-index: 1000;
+    opacity: 1;
+}

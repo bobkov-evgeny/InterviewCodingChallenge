@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.action-button {
+  height: 35px;
+  padding: 0 25px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  transition: background-color .1s;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    border-color: rgba(0, 0, 0, 0.20);
+    background-color: #f6f6f6;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: #eaeaea;
+    color: #5f5f5fb5;
+  }
+}

@@ -1,0 +1,51 @@
+.trade-table {
+    width: 40%;
+    height: 500px;
+    margin-top: 20px;
+    overflow: auto;
+    border-radius: 3px;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        background: white;
+
+        thead th {
+            height: 50px;
+            background-color: #f2f2f2;
+        }
+
+        tbody {
+            position: relative;
+            border: 1px solid #dddddd;
+
+            .empty-table-filler {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                color: rgba(0,0,0,.35);
+
+                &:after {
+                    content: 'No trades were found.';
+                }
+            }
+        }
+
+        tr {
+            border: 1px solid #dddddd;
+            height: 50px;
+
+            &:nth-child(even){
+                background-color: #f2f2f2;
+            }
+
+            td, th {
+                text-align: center;
+                padding: 8px;
+            }
+        }
+    }
+}
